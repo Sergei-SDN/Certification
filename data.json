@@ -1,0 +1,89 @@
+[
+  {
+    "model": "electronic.product",
+    "pk": 1,
+    "fields": {
+      "title": "Ноутбук",
+      "model": "A123",
+      "release_date": "2023-01-15"
+    }
+  },
+  {
+    "model": "electronic.product",
+    "pk": 2,
+    "fields": {
+      "title": "Смартфон",
+      "model": "B456",
+      "release_date": "2023-05-20"
+    }
+  },
+  {
+    "model": "electronic.product",
+    "pk": 3,
+    "fields": {
+      "title": "Планшет",
+      "model": "C789",
+      "release_date": "2023-08-10"
+    }
+  },
+  {
+    "model": "electronic.network",
+    "pk": 1,
+    "fields": {
+      "name": "ООО ТехноЗавод",
+      "level": 0,
+      "email": "info@technoplant.com",
+      "country": "Россия",
+      "city": "Санкт-Петербург",
+      "street": "Улица Ломоносова",
+      "house_number": "5",
+      "supplier": null,
+      "debt_to_supplier": "0.00",
+      "created_at": "2024-04-11T05:54:07.488Z",
+      "products": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "electronic.network",
+    "pk": 2,
+    "fields": {
+      "name": "ООО Розничная Сеть",
+      "level": 1,
+      "email": "info@retailnetwork.com",
+      "country": "Россия",
+      "city": "Москва",
+      "street": "Улица Пушкина",
+      "house_number": "10",
+      "supplier": 1,
+      "debt_to_supplier": "5000.00",
+      "created_at": "2024-04-11T05:56:01.144Z",
+      "products": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "electronic.network",
+    "pk": 3,
+    "fields": {
+      "name": "ИП Иванов",
+      "level": 2,
+      "email": "ivanov@example.com",
+      "country": "Россия",
+      "city": "Санкт-Петербург",
+      "street": "Улица Разумовская",
+      "house_number": "15",
+      "supplier": 2,
+      "debt_to_supplier": "2000.00",
+      "created_at": "2024-04-11T05:59:04.633Z",
+      "products": [
+        2
+      ]
+    }
+  }
+]
