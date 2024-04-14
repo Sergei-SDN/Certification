@@ -57,4 +57,22 @@
 ## API
 
 API интерфейс предоставляет возможность взаимодействия с данными с помощью HTTP запросов.
+ 
+    POST http://localhost:8000/users/token/
 
+Запрос авторизацию пользователя. Получение токена для доступа.
+
+
+    GET http://localhost:8000/electronic/api/networks/
+
+Извлекает список объектов сети. 
+
+
+    GET http://localhost:8000/electronic/api/networks/?country=USA
+
+Этот GET-запрос аналогичен предыдущему, но включает параметр запроса для фильтрации результатов по стране
+
+
+    PUT http://localhost:8000/electronic/api/networks/3/
+
+Обновить или изменить существующий объект сети
